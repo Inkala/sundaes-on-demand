@@ -1,4 +1,4 @@
-export interface Flavors {
+export interface Option {
   name: string;
   imagePath: string;
 }

@@ -5,6 +5,7 @@ function App() {
   return (
     <div className={classes.App}>
       <Options optionType="scoops" />
+      <Options optionType="toppings" />
     </div>
   );
 }
