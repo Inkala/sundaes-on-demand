@@ -1,4 +1,4 @@
-import { logRoles, render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import { rest } from 'msw';
 
 import OrderEntry from '../OrderEntry';
