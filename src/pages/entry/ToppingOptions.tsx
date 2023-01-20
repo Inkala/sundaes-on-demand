@@ -1,5 +1,5 @@
 import { Col } from 'react-bootstrap';
-import { Option } from '../../types';
+import { Option } from '../../utilities/types';
 
 const ToppingOptions = ({ name, imagePath }: Option) => {
   return (

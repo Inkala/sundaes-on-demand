@@ -1,12 +1,19 @@
-import classes from './App.module.scss';
-import Options from './pages/entry/Options';
+import { Container } from 'react-bootstrap';
+
+import { OrderDetailsProvider } from './context/OrderDetails';
+import OrderEntry from './pages/entry/OrderEntry';
 
 function App() {
   return (
-    <div className={classes.App}>
-      <Options optionType="scoops" />
-      <Options optionType="toppings" />
-    </div>
+    <Container>
+      <OrderDetailsProvider>
+        <OrderEntry />
+      </OrderDetailsProvider>
+      {/* <div className={classes.App}>
+        <Options optionType="scoops" />
+        <Options optionType="toppings" />
+      </div> */}
+    </Container>
   );
 }
 

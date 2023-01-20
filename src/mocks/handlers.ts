@@ -1,5 +1,5 @@
 import { rest } from 'msw';
-import { Option } from '../types';
+import { Option } from '../utilities/types';
 
 export const handlers = [
   rest.get<Option[]>('http://localhost:3030/scoops', (_, res, ctx) => {
